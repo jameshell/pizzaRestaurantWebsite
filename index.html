@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--My actual CSS-->
+      <link  type="text/css" rel="stylesheet" href="css/chocoStyle.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="utf-8">
+    </head>
+    <body style="background-color: black;">
+            <div class="row">
+             <div class="col s12">
+            <ul id="tabs-swipe-demo" class="tabs tabs-fixed-width">
+              <li class="tab col s2"><a class="active" href="#test1">Paso 1: ¿Cómo lo hacemos?</a></li>
+              <li class="tab col s2"><a href="#test2">Paso 2: Elige tus toppings</a></li>
+              <li class="tab col s2"><a href="#test3">Paso 3: Elige tu Base</a></li>
+              <li class="tab col s2"><a href="#test4">Paso 4: ¿Qué tamaño?</a></li>
+              <li class="tab col s2"><a href="#test5">Paso 5: ¿Algo de beber?</a></li>
+            </ul>
+            </div>
+          <div id="test1" class="col s12 black">
+            <div class="container">
+                <div class="row">
+                  <div class="col s12 m6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="img/pizzatoppings.jpg">
+                        <span class="card-title"  style="font-style: bold">Construye tu propia pizza</span>
+                        <a class="btn-large btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add</i></a>
+                      </div>
+                      <div class="card-content">
+                        <p>Crea tu pizza usando tu toppings favoritos, en la cantidad que tanto deseas!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="img/pizzaSelecciones.jpg">
+                        <span class="card-title" style="font-style: bold">Elige una de nuestras selecciones</span>
+                        <a class="btn-large btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add</i></a>
+                      </div>
+                      <div class="card-content">
+                        <p>Elige una de nuestras pizzas cuidadosamente seleccionadas para tus gustos.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div id="test2" class="col s12 red">Test 2</div>
+          <div id="test3" class="col s12 green">Test 3</div>
+          <div id="test4" class="col s12 orange">Test 4</div>
+          <div id="test5" class="col s12 yellow">Test 5</div>
+          </div>
+      
+        
+
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/chocoStyle.js"></script>
+      <script type="text/javascript">
+        $( document ).ready(function() {
+        $('.tabs').tabs({swipeable: true});
+                                      });
+      </script>
+
+
+    </body>
+  </html>

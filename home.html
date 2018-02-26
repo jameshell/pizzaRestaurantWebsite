@@ -1,0 +1,82 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!-- My css choco style!-->
+      <link rel="stylesheet" type="text/css" href="css/chocoStyle.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+       
+    <video autoplay muted loop id="myVideo">
+          <source src="videos/pizzaman.mp4" type="video/mp4">
+    </video>
+
+        <!-- Optional: some overlay text to describe the video -->
+        <div class="content">
+          <div class="container">
+              <div class="row">
+                <h1 class="white-text center-align">
+                  Pizzas del Maná
+                </h1>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <div class="center-align">
+                    <img class="responsive-img homePizza" src="img/home_pizza.png">
+                  </div>
+                  <div class="col s12">
+                  <div class="center-align">
+                    <p>Bienvenidos al restaurante mas fino cerca de la sergio, El Maná. Para ordenar dar click en el botón :V</p>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <div class="center-align">
+                   <a href="index.html" class="waves-effect waves-light btn-large orange darken-3"><i class="material-icons right">local_pizza</i>Ordenar</a> 
+                  </div>
+                </div>
+              </div>
+            </div>         
+            <!-- Use a button to pause/play the video with JavaScript -->
+         <!-- <button id="myBtn" onclick="myFunction()">Pause</button> -->
+        </div>
+
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/chocoStyle.js"></script>
+      <script>
+                  // Get the video
+                  var video = document.getElementById("myVideo");
+
+                  // Get the button
+                  var btn = document.getElementById("myBtn");
+
+                  // Pause and play the video, and change the button text
+                  function myFunction() {
+                      if (video.paused) {
+                          video.play();
+                          btn.innerHTML = "Pause";
+                      } else {
+                          video.pause();
+                          btn.innerHTML = "Play";
+                      }
+                  }
+                  function redireccion(){
+                    window.location.replace("https://pizzarequerimientos.herokuapp.com/myApp");
+                  }
+      </script>
+    </body>
+  </html>
+       

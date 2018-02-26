@@ -1,0 +1,73 @@
+.tabs .tab a{
+    color:#ff6f00;
+    background-color:black;
+}
+.tabs .tab a:hover,.tabs .tab a.active {
+	color:#ffffff;
+	background-color: #ff6f00;
+
+}
+.tabs .tab.disabled a,.tabs .tab.disabled a:hover {
+	color:#ffa040;	
+}
+.tabs .indicator {
+	background-color:#ffffff;
+}
+.pageBackground{
+
+}
+.downTheBar{
+	background-color: black;
+}
+/*.btn-large {
+    height: 10px;
+    line-height: -100px;
+    padding: 7rem;
+}
+*/
+.tabs-content .carousel-item { 
+	height: auto; 
+}
+.homePizza{
+	height: 70%;
+	width: 70%;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 90px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+
+
